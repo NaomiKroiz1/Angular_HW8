@@ -1,0 +1,26 @@
+[{
+    "id": 11,
+    "name": "AA",
+    "role": 1,
+    "salary" : 35000
+}, {
+    "id": 22,
+    "name": "BB",
+    "role": 2,
+    "salary" : 25000
+}, {
+    "id": 33,
+    "name": "CC",
+    "role": 3,
+    "salary" : 15000
+}, {
+    "id": 44,
+    "name": "DD",
+    "role": 3,
+    "salary" : 10000
+}, {
+    "id": 55,
+    "name": "EE",
+    "role": 4,
+    "salary" : 8500
+}]
