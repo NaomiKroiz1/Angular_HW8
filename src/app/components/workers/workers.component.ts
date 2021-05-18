@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Worker } from '../../types/Worker';
+import { WorkersService } from '../../services/workers.service';
+
 
 @Component({
   selector: 'app-workers',
@@ -7,7 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkersComponent implements OnInit {
 
-  constructor() { }
+  workers: Worker[] = [];
+  constructor(private workersService: WorkersService) {
+    this.workersService.getWorkers()
+      .subscribe((workers: Worker[]) => this.workers = workers);
+     debugger
+  }
 
   ngOnInit(): void {
   }

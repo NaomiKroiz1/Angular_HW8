@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  viewWorkers: Boolean = true;
+  setViewWorkers(val: boolean){
+    this.viewWorkers = val;
+  }
 }
+
+
