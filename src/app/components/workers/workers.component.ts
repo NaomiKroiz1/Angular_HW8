@@ -14,7 +14,6 @@ export class WorkersComponent implements OnInit {
   constructor(private workersService: WorkersService) {
     this.workersService.getWorkers()
       .subscribe((workers: Worker[]) => this.workers = workers);
-     debugger
   }
 
   ngOnInit(): void {

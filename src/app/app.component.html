@@ -1,4 +1,7 @@
 <input type="button" value="workers"  (click)="setViewWorkers(true)"/>
+<br/>
 <app-workers *ngIf="viewWorkers"></app-workers>
+<br/>
 <input type="button" value="roles"  (click)="setViewWorkers(false)"/> 
+<br/>
 <app-roles *ngIf="!viewWorkers"></app-roles>

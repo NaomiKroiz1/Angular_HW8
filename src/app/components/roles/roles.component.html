@@ -1,1 +1,4 @@
-<p>roles works!</p>
+<h2>Roles</h2>
+<ul>
+    <li *ngFor="let role of roles"> {{role.role + ' ----> avarge salsry ---->  '  +  calcAvgSalary(role.id)}} </li>
+</ul>
